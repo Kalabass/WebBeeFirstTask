@@ -178,6 +178,31 @@ button {
 	gap: 32px;
 }
 
+.map_page {
+	width: 100%;
+	height: 100%;
+
+	background: var(--primary_white);
+
+	box-sizing: border-box;
+
+	padding: 32px;
+}
+
+.map_page_content {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	align-items: center;
+}
+
+.map {
+	width: 100%;
+}
+
 .page_content_resume {
 	width: 100%;
 	height: 100%;
@@ -286,9 +311,33 @@ button {
 }
 
 .resume_info_styled_ul li {
-	margin-bottom: 10px; /* Интервал между пунктами списка */
+	margin-bottom: 10px;
 }
 
 .resume_info_styled_ul li:last-child {
-	margin-bottom: 0; /* Убирает интервал после последнего элемента */
+	margin-bottom: 0;
+}
+
+#preloader {
+	display: flex;
+}
+
+#google-map {
+	width: 100%;
+	height: 100%;
+	display: none;
+	margin-bottom: 32px;
+}
+
+.spinner {
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
