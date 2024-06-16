@@ -10,8 +10,9 @@ function initMap() {
 		document.getElementById('google-map'),
 		mapOptions
 	);
+
 	setTimeout(() => {
-		preloader.remove();
+		document.getElementById('preloader').remove();
 		document.getElementById('google-map').style.display = 'block';
 	}, 1000);
 }
